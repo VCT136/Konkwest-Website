@@ -3,6 +3,7 @@
 :root {
     --grey-6: #060606;
     --grey-6-transparent: #060606c6;
+    --k-red: #ee2e3e;
     --k-yellow: #ffd666;
 }
 
@@ -12,15 +13,28 @@ html {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     color: white;
     font-family: Grenze, 'Times New Roman', Times, serif;
     font-size: 14pt;
     font-weight: 100;
     min-height: 100%;
+    scroll-behavior: smooth;
 }
 
 body {
     margin: 0;
+}
+
+a {
+    color: var(--k-yellow);
+    font-weight: 300;
+    text-decoration: none;
+    transition-duration: 0.3s;
+    transition-property: color;
+}
+a:hover {
+    color: var(--k-red);
 }
 
 h1, h2 {
@@ -37,10 +51,30 @@ h2 {
     font-size: 1.25rem;
 }
 
+hr {
+    border-top: 1px grey solid;
+    width: 100%;
+}
+
 img {
     object-fit: contain;
     max-height: 80vh;
     width: 90%;
+}
+img.round {
+    border-radius: 50%;
+}
+img.small {
+    max-height: 10vh;
+}
+
+p {
+    margin-top: 0;
+    text-align: justify;
+    width: 100%;
+}
+p.centered-text {
+    text-align: center;
 }
 
 article {
@@ -76,4 +110,19 @@ ul li {
     border-radius: 10px;
     box-shadow: var(--k-yellow) 0 0 5px -1px;
     padding: 5px;
+}
+ul a {
+    color: black;
+    font-weight: 300;
+    text-decoration: none;
+}
+ul a li {
+    background-color: var(--k-yellow);
+    box-shadow: none;
+    transition-duration: 0.3s;
+    transition-property: background-color;
+}
+ul a li:hover {
+    background-color: var(--k-red);
+    color: var(--grey-6);
 }
