@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Grenze:ital,wght@0,100;0,300;1,100;1,300&display=swap');
+
+:root {
+    --grey-6: #060606;
+    --grey-6-transparent: #060606c6;
+    --k-yellow: #ffd666;
+}
+
+html {
+    background-color: var(--grey-6);
+    background-image: url("/res/Konkwest_web_background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    font-family: Grenze, 'Times New Roman', Times, serif;
+    font-size: 14pt;
+    font-weight: 100;
+    min-height: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+h1, h2 {
+    font-weight: 300;
+    margin-top: 0;
+    text-align: center;
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+h2 {
+    font-size: 1.25rem;
+}
+
+img {
+    object-fit: contain;
+    max-height: 80vh;
+    width: 90%;
+}
+
+article {
+    backdrop-filter: blur(3px);
+    background-color: var(--grey-6-transparent);
+    border-color: var(--grey-6);
+    border-radius: 10px;
+    border-style: solid;
+    display: grid;
+    padding: 0 auto 0 auto;
+    place-items: center;
+    margin: 5px auto 5px auto;
+    padding: 10px;
+    min-height: 90vh;
+    width: 60%;
+    max-width: 1080px;
+    min-width: 250px;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    list-style: none;
+    margin-top: 0;
+    padding: 0;
+    width: 100%;
+}
+ul li {
+    background-color: var(--grey-6);
+    border-radius: 10px;
+    box-shadow: var(--k-yellow) 0 0 5px -1px;
+    padding: 5px;
+}
