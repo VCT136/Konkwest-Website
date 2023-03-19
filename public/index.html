@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,107 +7,173 @@
 
   <link rel="stylesheet" href="stylesheets/main.css">
   <link rel="shortcut icon" href="/res/K Icon.png" type="image/x-icon">
+
+  <meta property="og:title" content="Konkwest - Arcade Grand Strategy" />
+  <meta name="description" property="og:description" content="The video game Konkwest brings you the full grand strategy, world conquest experience in an easily understandable and highly customizable, novelly turn based fashion.">
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.konkwest.net/" />
+  <meta property="og:image" content="/res/Konkwest_planet_c.jpg" />
 </head>
 <body>
 
-  <div class="nothing"></div>
-
-  <article>
-    <img src="/res/Konkwest Full Transparent.png" alt="Konkwest: Arcade Grand Strategy">
+  <video id="bg-video" autoplay loop muted poster="/res/screenshot_globe_dimmed.webp">
+    <source src="/res/konkwest_video_c2.mp4" type="video/mp4">
+  </video>
+  <section id="top">
     <div>
-      <h1>Coming 2024 to Steam and Google Play</h1>
+      <img src="/res/Konkwest transparent star-centric.svg" alt="Konkwest logo">
+      <h1>Arcade ~ Grand ~ Strategy</h1>
       <p class="centered-text">
-        <i>Konkwest</i> is a turn based, grand strategy game in which you can finish a multiplayer campaign in a single session.
+        Konkwest is a turn based, grand strategy game, where a multiplayer campaign takes a single session.
       </p>
+      <img src="/res/scroll hint.svg" alt="scroll hint" class="small">
     </div>
+  </section>
 
-    <div id="discord">
-      <h2>Join the Discord!</h2>
-      <iframe src="https://discord.com/widget?id=206881127338737665&theme=dark" width="90%" height="300" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
-    </div>
+  <section id="feel">
+    <article>
+      <div>
+        <h2>Lead your country to global dominance!</h2>
+        <p>
+          Konkwest brings you the full grand strategy, world conquest experience in an easily understandable and highly customizable, novelly turn based fashion.
+        </p>
+      </div>
+      <img class="round" src="/res/Konkwest_planet_c.jpg" alt="screenshot of the game world"><!--TODO: replace with gameplay footage-->
+    </article>
+  </section>
 
-    <div id="features">
+  <section id="scenarios">
+    <article>
+      <div>
+        <h2>4 Scenarios</h2>
+        <p>
+          You choose the setting! Each one comes with <a href="#historical-accuracy">historical / canonical</a> countries. Some scenarios also begin with industrialized places, some don't. You can also choose to play without a scenario, filling the world with custom countries only.
+        </p>
+        <ul>
+          <li>Contemporary</li>
+          <li>1900</li>
+          <li>1700</li>
+          <li>Kaiserzeit 1926*</li>
+        </ul>
+        <p>
+          *This scenario is an alternate history scenario from a <a href="https://vct.one/projects/kaiserzeit1926/" target="_blank">board game</a> I made.
+        </p>
+      </div>
+      <img src="/res/scenarios.png" alt="labelled screenshots of three of the scenarios in the game: 'Contemporary', '1900', and '1700'">
+    </article>
+  </section>
+
+  <section id="features">
+    <div>
       <h2>Features</h2>
+      <ul class="big">
+        <li><a href="#custom-countries">Custom countries</a></li>
+        <li>Single Resource Economy</li>
+        <li><a href="#multiplayer">Cross-platform multiplayer</a></li>
+      </ul>
       <ul>
-        <a href="#multiplayer"><li>Cross-platform multiplayer</li></a>
         <li>AI for non-player countries</li>
-        <a href="#custom-countries"><li>Custom countries</li></a>
         <li>Diplomacy</li>
         <li>Industry system</li>
         <li>Linguistics system</li>
-        <a href="#places"><li>&gt 1500 Places</li></a>
+        <li>&gt 10 Map modes</li>
+        <li><a href="#places">&gt 1500 Places</a></li>
         <li>Play as any country</li>
-        <a href="#scenarios"><li>4 Scenarios</li></a>
-        <li>Simultaneous turns</li>
+        <li><a href="#scenarios">4 Scenarios</a></li>
         <li>Spectate mode</li>
         <li>Supports touchscreens</li>
         <li>Terrain types</li>
       </ul>
     </div>
+  </section>
 
-    <div>
-      <h2>Will you rule the world?</h2>
-      <img class="round" src="/res/Konkwest_planet.jpg" alt="The planet earth as portrayed in the game Konkwest">
-    </div>
+  <section id="custom-countries">
+    <article>
+      <div>
+        <h2>Custom countries</h2>
+        <p>
+          You rule your country as you want! You can rename the country, its regions, and its places. You can change its color and adjust its policies to your liking. You can develop industry whereever you like and you choose what your country's next moves are. It's all in your control.
+        </p>
+      </div>
+      <img src="/res/screenshot_jeans_vineyard.jpg" alt="screenshot of a custom country named 'Jean's Vineyard'" class="round">
+    </article>
+  </section>
 
-    <div id="multiplayer">
-      <h2>Cross-platform Multiplayer</h2>
-      <p>
-        The game features multiplayer gameplay where you can play together with, or against friends all over the world. <br>
-        Multiplayer services are powered by <a href="https://www.photonengine.com/fusion" target="_blank">Photon Fusion</a>.
-      </p>
-    </div>
+  <section id="places">
+    <article>
+      <div>
+        <h2>&gt 1500 Places</h2>
+        <p>
+          Each place can be part of one region and country. Different languages can be spoken in a place, and they can have different terrain types and elevations, which influence the way countries interact with them. There are fields, forests, deserts, rainforests, grasslands and snow-covered places.
+        </p>
+      </div>
+      <img src="/res/screenshot_place_selected.webp" alt="screenshot of the game where a place is selected and the user interface shows details for that place">
+    </article>
+  </section>
 
-    <div id="scenarios">
-      <h2>4 Scenarios</h2>
-      <p>
-        You choose the setting! Each one comes with <a href="#historical-accuracy">historical / canonical</a> countries. Some scenarios also begin with industrialized places, some don't. You can also choose to play without a scenario, filling the world with custom countries only. <br>
-        The <i>Kaiserzeit 1926</i> scenario is an alternate history scenario from a <a href="https://vct.one/projects/kaiserzeit1926/" target="_blank">board game</a> I made.
-      </p>
-      <ul>
-        <li>Contemporary</li>
-        <li>1900</li>
-        <li>1700</li>
-        <li>Kaiserzeit 1926</li>
-      </ul>
-    </div>
+  <section id="multiplayer">
+    <article>
+      <div>
+        <h2>Cross-platform Multiplayer</h2>
+        <p>
+          The game features multiplayer gameplay where you can play together with, or against friends all over the world.
+        </p>
+        <p>
+          Multiplayer services are powered by <a href="https://www.photonengine.com/fusion" target="_blank">Photon Fusion</a>. This popular networking solution ensures regional servers are available nearly at all times.
+        </p>
+      </div>
+      <img src="/res/cross_platform.png" alt="an android similar to the Android logo waving to you through a window similar to the Windows logo">
+    </article>
+  </section>
 
-    <div id="places">
-      <h2>&gt 1500 Places</h2>
-      <p>
-        Each place can be part of one region and country. Different languages can be spoken in a place, and they can have different terrain types and elevations, which influence the way countries interact with them. There are fields, forests, deserts, rainforests, grasslands and snow-covered places.
-      </p>
-    </div>
+  <section id="community">
+    <article>
+      <div>
+        <h2>Join the Community!</h2>
+        <p>
+          Get into the conversation, connect with fellow enthousiasts, give feedback or help forge the path towards making Konkwest one of the best games of its genre.
+        </p>
+        <a href="https://discord.gg/T8EPkN7Vzz"><button>Join the Discord server</button></a>
+      </div>
+      <iframe title="Discord server widget for VCT's server" src="https://discord.com/widget?id=206881127338737665&theme=dark" width="90%" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+    </article>
+  </section>
+  
+  <section id="historical-accuracy">
+    <article>
+      <div>
+        <h2>Historical accuracy</h2>
+        <p>
+          In the development of Konkwest I have strived to achieve a high level of historical accuracy with the starting <a href="#scenarios">scenarios</a>. Since I am a Game Developer and not a researcher by trade however, I am fully aware that there will be errors in the game. Please let me know when you notice something wrong. Maybe I can fix it in a future update.
+        </p>
+      </div>
+      <!--TODO: place fitting image-->
+    </article>
+  </section>
 
-    <div id="custom-countries">
-      <h2>Custom countries</h2>
-      <p>
-        You rule your country as you want! You can rename the country, its regions, and its places. You can change its color and adjust its policies to your liking. You can develop industry whereever you like and you choose what your country's next moves are. It's all in your control.
-      </p>
-    </div>
-
-    <div id="historical-accuracy">
-      <h2 id="historical-accuracy">Historical accuracy</h2>
-      <p>
-        In the development of Konkwest I have strived to achieve a high level of historical accuracy with the starting scenarios. Since I am a Game Developer and not a researcher by trade however, I am fully aware that there will be errors in the game. Please let me know when you notice something wrong. Maybe I can fix it in a future update.
-      </p>
-    </div>
-
-    <hr>
-    <div>
-      <h2>A VCT Game</h2>
+  <section id="footer">
+    <article>
+      <div>
+        <h2>A VCT Game</h2>
+        <p>
+          ©2023 <a href="https://www.vct.one/">Vincent Busch a.k.a. VCT</a>. Others have contributed to the development of Konkwest. You can see the full credits listed in the game. Networking solution <a href="https://www.photonengine.com/fusion">Photon Fusion</a> by <i>Exit Games</i>.
+        </p>
+        <h3>Content Warning</h3>
+        <p>
+          Konkwest is in large parts the work of a single, politically active developer. It is not a complete, objective, or neutral source of information nor does it aim to be.
+        </p>
+        <p>
+          In no way is Konkwest meant to encourage or promote illegal or discriminatory behavior. While Konkwest enables players to play as they want, the developers disapprove of, and distance themselves from using the game for the promotion of anti-democratic and/or discriminatory governmenance, racism, addictive gambling, drug use and/or impersonation. 
+        </p>
+        <p>
+          In case you have noticed something wrong with the game itself, such as bugs, accidental use of offensive language, or major historical inaccuracies, please inform VCT. 
+        </p>
+      </div>
       <a href="https://www.vct.one/">
-        <img class="small" src="/res/VCT Logo 2023 White.png" alt="VCT logo">
+        <img src="/res/VCT Logo 2023 White.svg" alt="VCT logo">
       </a>
-    </div>
-    
-    <p>
-      ©2023 Vincent Busch a.k.a. VCT <br>
-      Others have contributed to the development of <i>Konkwest</i>. You can see the full credits listed in the game. | Networking solution <i>Photon Fusion</i> by <i>Exit Games</i>.
-    </p>
-  </article>
-
-  <div class="nothing"></div>
+    </article>
+  </section>
 
 </body>
 </html>
