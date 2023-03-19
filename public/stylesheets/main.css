@@ -17,7 +17,7 @@ html {
     background-attachment: fixed;
     color: white;
     font-family: Grenze, 'Times New Roman', Times, serif;
-    font-size: 16pt;
+    font-size: 12pt;
     min-height: 100%;
     scroll-behavior: smooth;
 }
@@ -40,6 +40,7 @@ a:hover {
 button {
     background-color: var(--k-yellow);
     border-radius: 10px;
+    border-style: none;
     display: block;
     font-family: inherit;
     font-size: inherit;
@@ -114,26 +115,20 @@ article div {
     background-color: var(--grey-6-transparent);
     border-radius: 20px;
     box-sizing: border-box;
+    margin: 20px 0 20px 0;
     padding: 20px;
     width: 100%;
 }
+article div > :first-child {
+    margin-top: 0;
+}
+article div > :last-child {
+    margin-bottom: 0;
+}
 article img {
+    margin-bottom: 20px;
     max-height: 100%;
     max-width: 100%;
-}
-
-@media only screen and (min-width: 768px) {
-    article {
-        grid-auto-flow: dense;
-        grid-template-columns: 1fr 1fr;
-    }
-    
-    section:nth-of-type(2n) article > :nth-child(1) {
-        grid-column: 2;
-    }
-    section:nth-of-type(2n) article > :nth-child(2) {
-        grid-column: 1;
-    }
 }
 
 div {
@@ -236,4 +231,22 @@ video#bg-video {
 }
 ::-webkit-scrollbar-thumb:hover {
     box-shadow: 0 0 0 2px var(--k-red) inset;
+}
+
+@media only screen and (min-width: 768px) {
+    html {
+        font-size: 16pt;
+    }
+
+    article {
+        grid-auto-flow: dense;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    section:nth-of-type(2n) article > :nth-child(1) {
+        grid-column: 2;
+    }
+    section:nth-of-type(2n) article > :nth-child(2) {
+        grid-column: 1;
+    }
 }
