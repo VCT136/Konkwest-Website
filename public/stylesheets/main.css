@@ -46,7 +46,7 @@ button {
     display: block;
     font-family: inherit;
     font-size: inherit;
-    margin: auto;
+    margin: 1em auto 1em auto;
     padding: 10px;
     transition-duration: 0.3s;
     transition-property: background-color;
