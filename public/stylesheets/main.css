@@ -9,6 +9,8 @@
     --grey-6-transparent: #060606c6;
     --k-red: #ee2e3e;
     --k-yellow: #ffd666;
+
+    font-size: 16pt;
 }
 
 html {
@@ -19,7 +21,6 @@ html {
     background-attachment: fixed;
     color: white;
     font-family: 'Maven Pro', Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 12pt;
     min-height: 100%;
     scroll-behavior: smooth;
 }
@@ -40,19 +41,43 @@ a:hover {
 }
 
 button {
-    background-color: var(--k-yellow);
-    border-radius: 10px;
+    align-items: center;
+    background: url("/res/konkwest_web_button_middle.png") no-repeat center center;
+    background-size: calc(100% - 80px) 40px;
     border-style: none;
-    display: block;
+    border-width: 0;
+    color: white;
+    cursor: pointer;
+    display: grid;
     font-family: inherit;
-    font-size: inherit;
+    font-size: 0.875rem;
+    font-weight: bold;
+    grid-template-columns: 40px auto 40px;
+    height: 40px;
+    width: 100%;
     margin: 1em auto 1em auto;
-    padding: 10px;
+    overflow: hidden;
+    padding: 0;
+    transform: none;
     transition-duration: 0.3s;
-    transition-property: background-color;
+    transition-property: color, transform;
 }
 button:hover {
-    background-color: var(--k-red);
+    color: var(--k-red);
+    transform: scale(1.05);
+} 
+button::before, button::after {
+    content: " ";
+    background-size: cover;
+    height: 40px;
+    width: 100%;
+    position: relative;
+}
+button::before {
+    background-image: url("/res/konkwest_web_button_left_end.png");
+}
+button::after {
+    background-image: url("/res/konkwest_web_button_right_end.png");
 }
 
 h1, h2 {
