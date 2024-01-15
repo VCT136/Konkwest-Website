@@ -8,9 +8,11 @@
     --grey-6: #060606;
     --grey-6-transparent: #060606c6;
     --k-red: #ee2e3e;
+    --k-teal: #12aba1;
     --k-yellow: #ffd666;
+    --link-color: #0de7d8;
 
-    font-size: 16pt;
+    font-size: 14pt;
 }
 
 html {
@@ -30,7 +32,7 @@ body {
 }
 
 a {
-    color: var(--k-yellow);
+    color: var(--link-color);
     font-weight: 300;
     text-decoration: none;
     transition-duration: 0.3s;
@@ -81,8 +83,8 @@ button::after {
 }
 
 h1, h2 {
+    color: var(--k-yellow);
     font-weight: 300;
-    text-align: center;
     font-family: Grenze, 'Times New Roman', Times, serif;
 }
 
@@ -118,13 +120,17 @@ img.small {
     max-height: 10vh;
 }
 
+p a {
+    text-decoration: underline;
+}
+
 p.centered-text {
     text-align: center;
 }
 
 article {
     display: grid;
-    gap: 1em;
+    gap: 24px;
     grid-template-columns: 1fr;
     place-items: center;
     margin: 0 auto 0 auto;
@@ -134,7 +140,7 @@ article {
 }
 article div {
     background-color: var(--grey-6);
-    background-image: url('/res/Tiling Floral Background.webp');
+    background-image: url('/res/Tiling Wood Background.png');
     border-color: var(--grey-53);
     border-style: solid;
     border-radius: 20px;
@@ -184,7 +190,7 @@ div.yt-video-container iframe {
 section {
     backdrop-filter: blur(1px);
     background-color: #020F2E;
-    background-image: linear-gradient(to bottom, var(--grey-6) 0%, var(--none) 10%, var(--none) 90%, var(--grey-6) 100%), url('/res/Tiling Floral Background.webp');
+    background-image: linear-gradient(to bottom, var(--grey-6) 0%, var(--none) 10%, var(--none) 90%, var(--grey-6) 100%), url('/res/Tiling Wood Background.png');
     background-position: center;
     background-size: cover;
     border-bottom: 2px solid var(--grey-6);
@@ -230,22 +236,20 @@ section#scenarios {
 }
 section#footer {
     background-color: var(--grey-16);
-    background-image: linear-gradient(to right, #363636, var(--grey-16));
+    background-image: radial-gradient(farthest-side at bottom center, #60001B, #0C0003);
 }
 
-ul {
+ul.big {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 10px;
-    justify-content: left;
-    list-style: inside url("/res/white\ star.svg");
     margin-top: 0;
     padding: 0;
     width: 100%;
-}
-ul.big {
+    justify-content: left;
     font-size: 1.5em;
+    list-style: inside url("/res/white\ star.svg");
 }
 
 video#bg-video {
