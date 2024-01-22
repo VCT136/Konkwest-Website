@@ -119,6 +119,13 @@ img.round {
 img.small {
     max-height: 10vh;
 }
+img.showcase {
+    display: inline;
+    object-position: left;
+    margin: 0;
+    max-height: 256px;
+    width: auto;
+}
 
 p a {
     text-decoration: underline;
@@ -205,6 +212,9 @@ section {
 section article img {
     backdrop-filter: none;
 }
+section.mini {
+    min-height: fit-content;
+}
 
 section#top {
     background-color: var(--none);
@@ -216,7 +226,7 @@ section#community {
 section#custom-countries {
     background-image: url('/res/screenshot_custom_countries_dark.jpg');
 }
-section#features {
+section#features, section#trailer {
     background-image: url("/res/space.jpg");
 }
 section#feel {
