@@ -226,8 +226,8 @@ section#community {
 section#custom-countries {
     background-image: url('/res/screenshot_custom_countries_dark.jpg');
 }
-section#features, section#trailer {
-    background-image: url("/res/space.jpg");
+section#features {
+    background-image: url("/res/thor-alvis-confetti-unsplash.jpg");
 }
 section#feel {
     background-image: url("/res/flags_dark.jpg");
@@ -242,7 +242,10 @@ section#places {
     background-image: url('/res/screenshot_elevation_africawebp.webp');
 }
 section#scenarios {
-    background-image: url('/res/scenarios_dark.jpg');
+    background-image: url('/res/tittee-parichad_gate.jpg');
+}
+section#trailer {
+    background-image: url('/res/nasa-unsplash-earth.jpg');
 }
 section#footer {
     background-color: var(--grey-16);
